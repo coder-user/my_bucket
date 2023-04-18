@@ -2,17 +2,11 @@
     "version": "22.11.3",
     "description": "A full-featured mind mapping and brainstorming tool",
     "homepage": "https://xmind.app/",
-    "license": {
-        "identifier": "Shareware",
-        "url": "https://xmind.app/terms/"
-    },
+    "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://igdzwq.by.files.1drv.com/y4mBjsDtJWHBmgP-waPpe8OaOU7v7iWSgsJ4hkKOPb63NK92Z58HHtte1ncLXhR2jwoscP5lTLxkiSkmnJoHF8zb8vtixps7VYXvqFh04PsNScXFilAHtVziftxgprF_H-fr0_-cr-Xgy04lxBLHaqnwT-mgsd7ZpCjK0lTRXmH__P6KQ523S3nj2p2yEBhgoFBJCPUEaHwsMBL4_x0PyT5nA/xmind.exe",
-            "hash": "7ce976ef8eedd2b3ac701521a0ceb6a89f5f3b88c5b67f12a0974b88b9b027d2",
-            "installer": {
-                "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
-            }
+            "hash": "7ce976ef8eedd2b3ac701521a0ceb6a89f5f3b88c5b67f12a0974b88b9b027d2"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse",
