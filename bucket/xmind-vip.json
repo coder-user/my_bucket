@@ -8,7 +8,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl3.xmind.net/Xmind-for-Windows-x64bit-22.11.3656.exe#/dl.7z",
+            "url": "https://igdzwq.by.files.1drv.com/y4mBjsDtJWHBmgP-waPpe8OaOU7v7iWSgsJ4hkKOPb63NK92Z58HHtte1ncLXhR2jwoscP5lTLxkiSkmnJoHF8zb8vtixps7VYXvqFh04PsNScXFilAHtVziftxgprF_H-fr0_-cr-Xgy04lxBLHaqnwT-mgsd7ZpCjK0lTRXmH__P6KQ523S3nj2p2yEBhgoFBJCPUEaHwsMBL4_x0PyT5nA#/dl.7z",
             "hash": "7ce976ef8eedd2b3ac701521a0ceb6a89f5f3b88c5b67f12a0974b88b9b027d2",
             "installer": {
                 "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
@@ -21,17 +21,5 @@
             "XMind.exe",
             "XMind"
         ]
-    ],
-    "checkver": {
-        "url": "https://xmind.app/desktop/release-notes/",
-        "regex": ">([\\d.]+) \\((\\d+)\\)</h3>",
-        "replace": "${1}.${2}"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://dl3.xmind.net/Xmind-for-Windows-x64bit-$version.exe#/dl.7z"
-            }
-        }
-    }
+    ]
 }
