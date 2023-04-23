@@ -5,13 +5,13 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/coder-user/my_bucket/raw/main/soft/TickTick-vip-v4.4.4.exe",
+            "url": "https://tinyurl.com/3bs3zchu/TickTick-vip-v4.4.4.exe",
             "hash": "23693dad88826ddde46ab8a91b04dc9de31dfd84c1dbc11f0d7e1f1bad64f5aa"
         }
     },
     "post_install": [
         "cd $env:USERPROFILE\\scoop\\apps\\ticktick-vip\\4.4.4",
-        "Invoke-WebRequest -Uri \"https://github.com/coder-user/my_bucket/raw/main/soft/TickTick-vip-v4.4.4-pj.exe\" -OutFile \"pj.exe\"",
+        "Invoke-WebRequest -Uri \"https://public.by.files.1drv.com/y4m_eO-qHSpprM59LF4RBMOHimbCm-Jj3kJmmOR3mgYGf8yEp6iEU6UfMkl6L2rjY6THg0LxRdDorcShhm5iL1saqkG4WWxz_gH29_C0Pd6yjIBGPTiwJBY3F9nge2xPzjOzRLZN_UEQdvmwrWBvgL61y94_kBJlnph7tdIBDy5dpNFH4m7EGSJ8JTloDEWjpyvmNiDlYkPAV2BD6Lhr4wZ6j-3DYVjlT4-iH67SwMmHiY?AVOverride=1/TickTick-vip-v4.4.4-pj.exe\" -OutFile \"pj.exe\"",
         "pwd",
         "Start-Process pj.exe",
         "echo \"will: Remove-Item pj.exe\""
