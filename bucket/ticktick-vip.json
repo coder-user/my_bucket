@@ -1,17 +1,17 @@
 {
-    "version": "4.4.4",
+    "version": "4.5.0",
     "description": "滴答清单 效率工具 管理时间（破解版本）.",
     "homepage": "https://ticktick.com/home",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://tinyurl.com/3bs3zchu/TickTick-vip-v4.4.4.exe",
+            "url": "https://public.by.files.1drv.com/y4mfXduojdFPoQheiP5aSqocljXukQ-9C9saMh2lukRX4UFIKPkc41iVQlEgitd1gNRvNjvReSz3c_HlJLsWAerq_8pH7tZKRMneBAwnfv28fGk7qKa57vG8-9EZCg28RsPhtZnuycflAuRZpHFxrHRgmJmnSXtWOV2PMQivNkPYfWRCb3WL6Y_75Aoz7zLtpym5UXX4v8Ur9qLW37QgJ7SosVEINvQHbLBk6FWMBZ5lUc?AVOverride=1/TickTick-vip-v4.5.0.exe",
             "hash": "23693dad88826ddde46ab8a91b04dc9de31dfd84c1dbc11f0d7e1f1bad64f5aa"
         }
     },
     "post_install": [
-        "cd $env:USERPROFILE\\scoop\\apps\\ticktick-vip\\4.4.4",
-        "Invoke-WebRequest -Uri \"https://public.by.files.1drv.com/y4m_eO-qHSpprM59LF4RBMOHimbCm-Jj3kJmmOR3mgYGf8yEp6iEU6UfMkl6L2rjY6THg0LxRdDorcShhm5iL1saqkG4WWxz_gH29_C0Pd6yjIBGPTiwJBY3F9nge2xPzjOzRLZN_UEQdvmwrWBvgL61y94_kBJlnph7tdIBDy5dpNFH4m7EGSJ8JTloDEWjpyvmNiDlYkPAV2BD6Lhr4wZ6j-3DYVjlT4-iH67SwMmHiY?AVOverride=1/TickTick-vip-v4.4.4-pj.exe\" -OutFile \"pj.exe\"",
+        "cd $env:USERPROFILE\\scoop\\apps\\ticktick-vip\\4.5.0",
+        "Invoke-WebRequest -Uri \"https://public.by.files.1drv.com/y4mMBQMtXl3EEHIcE0U_9gTfoiaeXYDONXKBl6SbdzyQm_l-qhD1vnXnZU1KnFr7ZZIcO-Evg2v_JTIxoMN8t2Wj7fmtwQgKMQHgKp0gAgKJpyA1fB5MzCFPirjiu_GwsiIUMycQxvH29sNG3I-GvoyBQAIso5rlbiaWXdJcD4tl56TImn6E58ghSAMZcruz1_dnpjLJdN0VCkmx-eNAa3ZWOXiFH7C0bgjaOhsRWAH6JM?AVOverride=1/TickTick-vip-v4.5.0-pj.exe\" -OutFile \"pj.exe\"",
         "pwd",
         "Start-Process pj.exe",
         "echo \"will: Remove-Item pj.exe\""
