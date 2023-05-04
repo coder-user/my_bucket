@@ -1,27 +1,42 @@
 {
-    "version": "4.5.0",
-    "description": "滴答清单 效率工具 管理时间（破解版本）.",
+    "version": "4.5.0.1",
+    "description": "滴答清单 效率工具 管理时间.",
     "homepage": "https://ticktick.com/home",
     "license": "MIT",
+    "notes": "The update of this app can be somewhat delayed as it managed by hands.",
     "architecture": {
         "64bit": {
-            "url": "https://tinyurl.com/5yr63wex",
-            "hash": "2e8042421de34edbba9d51f2e9a31202682418e17231712483e4227742a772b1"
+            "url": "https://ticktick.com/static/getApp/download?type=win64",
+            "hash": "5d3349d5067ea9c065260fa9f99b5bba67b27b93f2877d835c4ff925a3f2aad9"
         }
     },
-    "post_install": [
-        "cd $env:USERPROFILE\\scoop\\apps\\ticktick-vip\\4.5.0",
-        "Invoke-WebRequest -Uri \"https://public.by.files.1drv.com/y4mMBQMtXl3EEHIcE0U_9gTfoiaeXYDONXKBl6SbdzyQm_l-qhD1vnXnZU1KnFr7ZZIcO-Evg2v_JTIxoMN8t2Wj7fmtwQgKMQHgKp0gAgKJpyA1fB5MzCFPirjiu_GwsiIUMycQxvH29sNG3I-GvoyBQAIso5rlbiaWXdJcD4tl56TImn6E58ghSAMZcruz1_dnpjLJdN0VCkmx-eNAa3ZWOXiFH7C0bgjaOhsRWAH6JM?AVOverride=1\" -OutFile \"pj.exe\"",
-        "pwd",
-        "Start-Process pj.exe",
-        "echo \"will: Remove-Item pj.exe\""
-    ],
     "shortcuts": [
         [
             "TickTick.exe",
             "TickTick"
         ]
     ],
+    "post_install": [
+        "cd $env:USERPROFILE\\scoop\\apps\\ticktick-vip",
+        "Invoke-WebRequest -Uri \"https://public.by.files.1drv.com/y4mMBQMtXl3EEHIcE0U_9gTfoiaeXYDONXKBl6SbdzyQm_l-qhD1vnXnZU1KnFr7ZZIcO-Evg2v_JTIxoMN8t2Wj7fmtwQgKMQHgKp0gAgKJpyA1fB5MzCFPirjiu_GwsiIUMycQxvH29sNG3I-GvoyBQAIso5rlbiaWXdJcD4tl56TImn6E58ghSAMZcruz1_dnpjLJdN0VCkmx-eNAa3ZWOXiFH7C0bgjaOhsRWAH6JM?AVOverride=1/TickTick-vip-v4.5.0-pj.exe\" -OutFile \"pj.exe\"",
+        "pwd",
+        "Start-Process pj.exe",
+        "echo \"will: Remove-Item pj.exe\""
+    ],
     "persist": "TickTick.exe.config",
+    "checkver": {
+        "url": "https://gist.github.com/qyurila/f85676b9caeb1917d0f3eecfa2d5fcc0",
+        "regex": "ticktick: ([\\.\\d]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://ticktick.com/static/getApp/download?type=win64"
+            },
+            "32bit": {
+                "url": "https://ticktick.com/static/getApp/download?type=win"
+            }
+        }
+    },
     "innosetup": true
 }
