@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "http://s6e.cn/MV5Z1",
-            "hash": "2e8042421de34edbba9d51f2e9a31202682418e17231712483e4227742a772b1"
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         }
     },
     "post_install": [
